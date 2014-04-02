@@ -12,7 +12,7 @@ The Copyright plugin uses the jQuery JavaScript library, only. So, include just 
 
 <pre>
 &lt;script src="js/jquery.js"&gt;&lt;/script&gt;
-&lt;script src="js/jquery.coopyright.js">&lt;/script&gt;
+&lt;script src="js/jquery.copyright.js">&lt;/script&gt;
 </pre>
 
 Call the jQuery Copyright plugin. You can select a specific selector or the document.
