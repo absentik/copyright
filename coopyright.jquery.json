@@ -1,0 +1,31 @@
+{
+    "name": "copyright",
+    "title": "jQuery copyright",
+    "description": "jQuery plugin for add a reference to the source in buffer when copying.",
+    "keywords": [
+        "copy",
+        "oncopy",
+        "copying",
+        "buffer",
+        "reference",
+        "link"
+    ],
+    "version": "0.0.1",
+    "author": {
+        "name": "Seleznev Alexander",
+        "email": "absenteg@gmail.com",
+        "url": "http://whoisabsent.ru"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php "
+        }
+    ],
+    "homepage": "https://github.com/absentik/copyright",
+    "docs": "https://github.com/absentik/copyright/wiki",
+    "bugs": "https://github.com/absentik/copyright/issues",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
