@@ -39,4 +39,4 @@ You can listen Copyright events.
 
 
 ## EXAMPLE
-[View example](http://jsfiddle.net/absentik/ZKbse/)
+[View example](http://jsfiddle.net/absentik/ZKbse/embedded/result/)
