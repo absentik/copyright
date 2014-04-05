@@ -8,7 +8,7 @@ The Copyright plugin allows you to add a reference to the source in buffer when 
 Plugin is supported in Internet Explorer 7+, Firefox 3.5+, Opera 10.5+, Chrome 4.0+, and Safari 4.0+.
 
 ## USAGE
-The Copyright plugin uses the jQuery JavaScript library, only. So, include just these two javascript files in your header.
+The Copyright plugin uses the jQuery JavaScript library (>=1.7), only. So, include just these two javascript files in your header.
 
 <pre>
 &lt;script src="js/jquery.js"&gt;&lt;/script&gt;
@@ -39,4 +39,4 @@ You can listen Copyright events.
 
 
 ## EXAMPLE
-[View example](http://htmlpreview.github.io/?https://github.com/absentik/copyright/blob/master/index.html#example)
+[View example](http://jsfiddle.net/absentik/ZKbse/)
