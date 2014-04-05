@@ -1,5 +1,5 @@
 /*
- * jQuery Copyright plugin 0.0.1 
+ * jQuery Copyright plugin 0.0.2 
  * https://github.com/absentik/copyright
  * 
  * Author: Seleznev Alexander (ABSENT) 
@@ -14,7 +14,7 @@
 
     var pluginName = "copyright";
     var defaults = {
-        text: "<br>Reference: " + window.location.href, 
+        text: "<br>Original: " + window.location.href, 
         minlength: 0
     };
 
