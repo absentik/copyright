@@ -21,7 +21,7 @@ Call the jQuery Copyright plugin. You can select a specific selector or the docu
 
 ### Options:
 You can pass an options object in plugin init method.
-* `text` : The text that will be added when copying (Default: `"&lt;br&gt;Original: " + window.location.href`);
+* `text` : The text that will be added when copying (Default: `"<br>Original: " + window.location.href`);
 * `minlength` : The minimum length of the copied text when running the plugin (Default: `0`).
 
 <pre>$(document).copyright({ text: "&lt;br&gt;Reference: " + window.location.href, minlength: 100 });</pre>
