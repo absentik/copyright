@@ -1,5 +1,5 @@
 /*
- * jQuery Copyright plugin 0.1.0 
+ * jQuery Copyright plugin 0.1.1 
  * https://github.com/absentik/copyright
  * 
  * Author: Seleznev Alexander (ABSENT) 
