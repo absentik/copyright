@@ -2,7 +2,7 @@ Copyright
 =======
 
 ## ABOUT
-The Copyright plugin allows you to add a reference to the source in buffer when copying.
+A jQuery plugin to automatically append reference and copyright text to any content the user is copy & pasting away from your site.
 
 ### Browser Support 
 Plugin is supported in Internet Explorer 7+, Firefox 3.5+, Opera 10.5+, Chrome 4.0+, and Safari 4.0+.
@@ -23,8 +23,17 @@ Call the jQuery Copyright plugin. You can select a specific selector or the docu
 You can pass an options object in plugin init method.
 * `text` : The text that will be added when copying (Default: `"<br>Original: " + window.location.href`);
 * `minlength` : The minimum length of the copied text when running the plugin (Default: `0`).
+* `processing` : Function to process the copied text (Default: `undefined`).
 
-<pre>$(document).copyright({ text: "&lt;br&gt;Reference: " + window.location.href, minlength: 100 });</pre>
+<pre>
+$(document).copyright({
+	text: "&lt;br&gt;Reference: " + window.location.href,
+	minlength: 100,
+	processing: function(text) {
+		return "Text \"" + text + "\" copied.";
+	}
+});
+</pre>
 
 ### Methods:
 You can call some methods. Just pass their name.

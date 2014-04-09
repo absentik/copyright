@@ -1,7 +1,7 @@
 {
     "name": "copyright",
     "title": "jQuery copyright",
-    "description": "jQuery plugin for add a reference to the source in buffer when copying.",
+    "description": "A jQuery plugin to automatically append reference and copyright text to any content the user is copy & pasting away from your site.",
     "keywords": [
         "copy",
         "oncopy",
@@ -10,7 +10,7 @@
         "reference",
         "link"
     ],
-    "version": "0.0.2",
+    "version": "0.1.0",
     "author": {
         "name": "Seleznev Alexander",
         "email": "absenteg@gmail.com",

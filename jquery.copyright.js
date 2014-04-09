@@ -1,5 +1,5 @@
 /*
- * jQuery Copyright plugin 0.0.2 
+ * jQuery Copyright plugin 0.1.0 
  * https://github.com/absentik/copyright
  * 
  * Author: Seleznev Alexander (ABSENT) 
@@ -15,7 +15,8 @@
     var pluginName = "copyright";
     var defaults = {
         text: "<br>Original: " + window.location.href, 
-        minlength: 0
+        minlength: 0, 
+        processing: undefined
     };
 
     function Copyright(element, options) {
@@ -93,6 +94,9 @@
         var range = it.saveSelectionRange(body[0]);
 
         if (selectText.length > it.options.minlength) {
+            if (typeof it.options.processing == "function") {
+                selectText = it.options.processing(selectText);
+            }
             selectText += it.options.text;
         }
 

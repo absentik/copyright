@@ -30,9 +30,20 @@
 
 	<script>
 		$(document).ready(function() {
+			//Example
 			$(document).copyright({
 				text: "<br>Reference: " + window.location.href,
 				minlength: 1
+			});
+
+			//Example text processing
+			//$(document).copyright({
+			//	text: "",
+			//	minlength: 10,
+			//	processing: function(text) {
+			//		return "Text \"" + text + "\" copied.";
+			//	}
+				
 			});
 		});	
 	</script>
@@ -41,7 +52,7 @@
 	<div class="wrapper">
 		<div class="head">
 			<h1>Copyright</h1>
-			<p>jQuery plugin for add a reference to the source in buffer when copying.</p>
+			<p>A jQuery plugin to automatically append reference and copyright text to any content the user is copy & pasting away from your site</p>
 			<div class="buttons">
 				<a href="https://github.com/absentik/coopyright/archive/master.zip">Download</a>
 				<a href="https://github.com/absentik/coopyright">Github Page</a>
@@ -71,11 +82,15 @@ $(document).copyright();
 		<ul>
 			<li><b>text</b> : The text that will be added when copying <i>(Default: "&lt;br&gt;Original: " + window.location.href)</i>;</li>
 			<li><b>minlength</b> : The minimum length of the copied text when running the plugin <i>(Default: 0)</i>.</li>
+			<li><b>processing</b> : Function to process the copied text <i>(Default: undefined)</i>.</li>
 		</ul>
 		<pre>
 $(document).copyright({
 	text: "&lt;br&gt;Reference: " + window.location.href,
-	minlength: 100
+	minlength: 100,
+	processing: function(text) {
+		return "Text \"" + text + "\" copied.";
+	}
 });
 		</pre>
 		<br>
