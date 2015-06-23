@@ -29,13 +29,20 @@
     }
 
     Copyright.prototype.getSelectedText = function() {
-        var text = "";
+        var html = "";
         if (window.getSelection) {
-            text = window.getSelection().toString();
+            var sel = window.getSelection();
+            if (sel.rangeCount) {
+                var container = document.createElement("div");
+                for (var i = 0, len = sel.rangeCount; i < len; ++i) {
+                    container.appendChild(sel.getRangeAt(i).cloneContents());
+                }
+                html = container.innerHTML;
+            }
         } else if (document.selection) {
-            text = document.selection.createRange().text;
+            html = document.selection.createRange().htmlText;
         }
-        return text;
+        return html;
     };
 
     Copyright.prototype.setSelectionRange = function() {
